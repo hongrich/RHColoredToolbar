@@ -12,7 +12,6 @@
 @end
 
 static CGFloat const kDefaultColorLayerOpacity = .7f;
-static CGFloat const kSpaceToCoverStatusBars = 64.f;
 
 @implementation RHColoredToolbar
 
@@ -36,7 +35,7 @@ static CGFloat const kSpaceToCoverStatusBars = 64.f;
     [super layoutSubviews];
 
     if (self.extraColorLayer) {
-        self.extraColorLayer.frame = CGRectMake(0.f, -kSpaceToCoverStatusBars, CGRectGetWidth(self.bounds), CGRectGetHeight(self.bounds) + kSpaceToCoverStatusBars);
+        self.extraColorLayer.frame = self.frame;
     }
 
     [self.extraColorLayer removeFromSuperlayer];
