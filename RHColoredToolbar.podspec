@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.author       = { "Rich Hong" => "hong.rich@gmail.com" }
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/hongrich/RHColoredToolbar.git", :tag => "0.0.1" }
-  s.source_files = 'AZColoredNavigationBar'
+  s.source_files = 'RHColoredToolbar'
   s.requires_arc = true
   s.framework    = 'QuartzCore'
 end
